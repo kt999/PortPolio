@@ -23,6 +23,10 @@ app.get('/',(req, res)=>{
     res.render('index.ejs');
 });
 
+app.get('/work/1',(req, res)=>{
+    res.render('work1.ejs');
+});
+
 ///////////// server routing
 
 ///////////////////
