@@ -128,7 +128,7 @@
     -webkit-transform:translate(-50%, -50%);
     -ms-transform:translate(-50%, -50%);
 
-    font-size: 8vw;
+    font-size: 9vw;
 }
 
 
@@ -251,6 +251,8 @@
     width: 5vw;
     height: 5vw;
     margin: 0.5vw;
+    border: 5px solid white;
+    border-radius: 100%;
 }
 
 #section_2 .main_sec_2 .content_box .content{
@@ -272,11 +274,13 @@
 
 
 #root #section_3{
-    /*background-color: rgba(0,0,0,0.85);*/
-    background-color: gray;
+    background-color: rgba(0,0,0,0.85);
+    /*background-color: gray;*/
     width: 100%;
     padding-top: 8%;
     padding-bottom: 5%;
+
+    color: rgba(255,255,255,1);
 }
 
 #root #section_3 .main_sec_1{
@@ -332,5 +336,24 @@
     /*background-color: rgba(0,0,0,0.85);*/
     background-color: white;
     width: 100%;
-    height: 500px;
+}
+
+#root #section_4 .title{
+    text-align: center;
+    font-size: 5vw;
+}
+
+#root #section_4 .content_box{
+    text-align: center;
+}
+#root #section_4 .content_box .contact_icon{
+    width: 25px;
+    height: 25px;
+}
+
+#root #footer{
+    border: 1px solid red;
+}
+#root #footer #copyright{
+    text-align: center;
 }
