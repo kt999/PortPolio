@@ -246,25 +246,27 @@
 }
 
 #section_2 .main_sec_2{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin: 0 10% 0 10%;
 }
 
 #section_2 .main_sec_2 .title_box{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding: 20px;
     font-size: 40px;
     font-weight: 600;
+
+    margin-bottom: 30px;
 }
 
 #section_2 .main_sec_2 .content_box{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     display: flex;
 }
 
 #section_2 .main_sec_2 .content_box .title{
     text-align: center;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding: 10px;
 
     font-size: 20px;
@@ -272,7 +274,7 @@
 
 }
 #section_2 .main_sec_2 .content_box .icon{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     text-align: center;
 }
 #section_2 .main_sec_2 .content_box .icon .skill_icon{
@@ -283,20 +285,31 @@
     /*border-radius: 100%;*/
 }
 
+a.skill_icon_link:link {
+    text-decoration: none;
+}
+a.skill_icon_link:visited {
+    text-decoration: none;
+}
+
 #section_2 .main_sec_2 .content_box .content{
     border: 1.5px solid rgba(255,255,255,1);
     border-radius: 5px;
-    height: 200px;
+    height: 260px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
+
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
 }
 
 #section_2 .main_sec_2 .content_box .left_sec{
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
     width: 50%;
 }
 #section_2 .main_sec_2 .content_box .right_sec{
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
     width: 50%;
 }
 
