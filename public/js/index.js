@@ -112,6 +112,10 @@ const navLink = (index) => {
     else if(index == 2){
         $('#root').animate({scrollTop : location_3}, 1500);
     }
+
+    else if(index == 3){
+        $('#root').animate({scrollTop : 0}, 1500);
+    }
 };
 
 
