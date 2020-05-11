@@ -94,6 +94,26 @@ const skillIconServer = (index) => {
     }
 };
 
+//nav
+function getOffsetTop(el) { var top = 0; if (el.offsetParent) { do { top += el.offsetTop; } while (el = el.offsetParent); return [top]; } }
+
+const navLink = (index) => {
+
+    let location_1 = getOffsetTop(document.getElementsByClassName('temp_section')[0]);
+    let location_2 = getOffsetTop(document.getElementsByClassName('temp_section')[1]);
+    let location_3 = getOffsetTop(document.getElementById('section_4'));
+
+    if(index == 0){
+        $('#root').animate({scrollTop : location_1-30}, 500);
+    }
+    else if(index == 1){
+        $('#root').animate({scrollTop : location_2-30}, 1000);
+    }
+    else if(index == 2){
+        $('#root').animate({scrollTop : location_3}, 1500);
+    }
+};
+
 
 
 // number ++

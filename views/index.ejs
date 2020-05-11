@@ -8,9 +8,10 @@
     <title>이기택 포트폴리오</title>
 
     <link rel="stylesheet" href="css/index.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/57608ebaa2.js"></script>
+
 
 </head>
 <body>
@@ -82,13 +83,19 @@
             <div class="nav_sub"></div>
 
             <div class="nav_content">
-                <div id="nav_text_1" class="text">About</div>
+                <a class="skill_icon_link" href="javascript:void(0);onclick=navLink(0)">
+                    <div id="nav_text_1" class="text">About</div>
+                </a>
             </div>
             <div class="nav_content">
-                <div id="nav_text_2" class="text">Work</div>
+                <a class="skill_icon_link" href="javascript:void(0);onclick=navLink(1)">
+                    <div id="nav_text_2" class="text">Work</div>
+                </a>
             </div>
             <div class="nav_content">
-                <div id="nav_text_3" class="text">Contact</div>
+                <a class="skill_icon_link" href="javascript:void(0);onclick=navLink(2)">
+                    <div id="nav_text_3" class="text">Contact</div>
+                </a>
             </div>
 
             <div class="nav_sub"></div>
@@ -98,7 +105,7 @@
         </div>
     </div>
 
-    <div class="temp_section">
+    <div id="temp_section_1" class="temp_section">
         <div class="text">About</div>
     </div>
 
@@ -176,7 +183,7 @@
 
     </div>
 
-    <div class="temp_section">
+    <div id="temp_section_1" class="temp_section">
         <div class="text">Work</div>
     </div>
 

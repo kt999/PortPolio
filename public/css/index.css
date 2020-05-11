@@ -297,9 +297,11 @@
 
 a.skill_icon_link:link {
     text-decoration: none;
+    color: white;
 }
 a.skill_icon_link:visited {
     text-decoration: none;
+    color: white;
 }
 
 #section_2 .main_sec_2 .content_box .content{
