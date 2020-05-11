@@ -1,3 +1,16 @@
+window.onload = () => {
+    //numplus
+    sample;
+
+    //title animation
+    $("#main_text").fadeToggle(2000);
+
+    //nav animation
+    $("#nav_text_1").fadeToggle(1500);
+    $("#nav_text_2").fadeToggle(2500);
+    $("#nav_text_3").fadeToggle(3500);
+};
+
 const skillIcon = (index) => {
     const contentBox = document.getElementById('skill_content_client');
 
@@ -51,6 +64,7 @@ const skillIconServer = (index) => {
                             <div>- 기본적인 php문법 숙지.</div>
                             <div>- MVC패턴을 적용하여 API서버를 구성.</div>
                             <div>- PDO를 이용하여 mysql 데이터베이스를 제어하고 활용함.</div>
+                            <div>- php-curl을 이용하여 외부 API서버에서 데이터를 가져와서 활용함.</div>
                         </div>
             `;
     }
@@ -79,3 +93,38 @@ const skillIconServer = (index) => {
             `;
     }
 };
+
+
+
+// number ++
+const count_1 =2;
+const count_2 =1;
+const count_3 =1;
+
+let count_sub_1 = 0;
+let count_sub_2 = 0;
+let count_sub_3 = 0;
+
+
+const numPlus = () => {
+
+    const count_area_1 = document.getElementsByClassName('content_count')[0];
+    const count_area_2 = document.getElementsByClassName('content_count')[1];
+    const count_area_3 = document.getElementsByClassName('content_count')[2];
+
+    if(count_sub_1 <= count_1){
+        count_area_1.innerHTML = count_sub_1;
+        count_sub_1++;
+    }
+    if(count_sub_2 <= count_2){
+        count_area_2.innerHTML = count_sub_2;
+        count_sub_2++;
+    }
+    if(count_sub_3 <= count_3){
+        count_area_3.innerHTML = count_sub_3;
+        count_sub_3++;
+    }
+};
+
+const sample = setInterval(numPlus,500);
+
