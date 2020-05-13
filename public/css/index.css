@@ -354,26 +354,27 @@ a.skill_icon_link:visited {
 }
 
 #root #section_3 .main_sec_1{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin: 0 10% 5% 10%;
 }
 
 #root #section_3 .main_sec_1 .title{
-    border: 1px solid blue;
-    font-size: 35px;
+    /*border: 1px solid blue;*/
+
+    font-size: 40px;
     font-weight: 500;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 
 #root #section_3 .main_sec_1 .content_box {
-    border: 1px solid white;
-    margin-bottom: 5%;
+    /*border: 1px solid white;*/
+    margin-bottom: 8%;
 }
 #root #section_3 .main_sec_1 .content_box .index{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 #root #section_3 .main_sec_1 .content_box .index .index_num{
     margin-right: 10px;
@@ -386,20 +387,61 @@ a.skill_icon_link:visited {
 
 #root #section_3 .main_sec_1 .content_box .content .left_sec{
     width: 60%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
+#root #section_3 .main_sec_1 .content_box .content .left_sec .top{
+    display: flex;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+#root #section_3 .main_sec_1 .content_box .content .left_sec .top .temp_box{
+    flex-grow: 1;
+}
+#root #section_3 .main_sec_1 .content_box .content .left_sec .top .view_button{
+    border: 1px solid white;
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-width: 600;
+
+    padding: 6px 10px 6px 10px;
+
+    margin: 20px 10px 20px 10px;
+
+}
+
 #section_3 .main_sec_1 .content_box .content .left_sec #work_img{
-    width: 95%;
-    margin: 0 5% 0 0;
+    width: 93%;
+    margin: 0 5% 0 2%;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
 #root #section_3 .main_sec_1 .content_box .content .right_sec{
-    flex-grow: 1;
-    border: 1px solid red;
+    width: 40%;
+    /*border: 1px solid red;*/
+
+    padding-top: 20px;
 }
 
+#root #section_3 .main_sec_1 .content_box .content .right_sec .content_title{
+    font-size: 20px;
+    font-weight: 600;
 
+    margin-bottom: 10px;
+}
+#root #section_3 .main_sec_1 .content_box .content .right_sec .content_text{
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 28px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    letter-spacing: 0.2px;
+
+    word-break: keep-all;
+}
 
 
 #root #section_4{
