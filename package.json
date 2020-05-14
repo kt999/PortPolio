@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PORT=80 pm2 start app.js -i 0"
+    "start": "PORT=443 pm2 start app.js -i 0"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
+    "fs": "0.0.1-security",
     "helmet": "^3.21.2",
     "hpp": "^0.2.2",
     "jsonwebtoken": "^8.5.1",

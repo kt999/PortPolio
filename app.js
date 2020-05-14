@@ -1,6 +1,19 @@
 const express = require('express');
 const app = express();
-const http = require('http').Server(app);
+const path = require('path');
+const https = require('https');
+const fs = require('fs');
+
+//https redirection
+app.use((req,res,next)=>{
+	if(!req.secure){
+		res.redirect("https://"+"kt999.site"+req.url);
+	}
+	else{
+		next();
+	}
+});
+
 
 //포트설정
 let PORT = process.env.PORT;
@@ -30,6 +43,17 @@ app.get('/',(req, res)=>{
 ///////////// server routing
 
 ///////////////////
-http.listen(PORT,()=>{
-    console.log(PORT+'번 포트에서 Connected!');
-});
+try {
+  const option = {
+    ca: fs.readFileSync('/etc/letsencrypt/live/kt999.site/fullchain.pem'),
+    key: fs.readFileSync(path.resolve(process.cwd(), '/etc/letsencrypt/live/kt999.site/privkey.pem'), 'utf8').toString(),
+    cert: fs.readFileSync(path.resolve(process.cwd(), '/etc/letsencrypt/live/kt999.site/cert.pem'), 'utf8').toString(),
+  };
+
+  https.createServer(option, app).listen(PORT, () => {
+    console.log("success!!");
+  });
+} catch (error) {
+  console.error('[HTTPS] HTTPS 오류가 발생하였습니다. HTTPS 서버는 실행되지 않습니다.');
+  console.warn(error);
+}
