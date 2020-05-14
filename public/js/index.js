@@ -152,3 +152,8 @@ const numPlus = () => {
 
 const sample = setInterval(numPlus,500);
 
+
+const preparing = () => {
+    alert("준비중 입니다.");
+};
+

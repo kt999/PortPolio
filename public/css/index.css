@@ -9,6 +9,24 @@
     -ms-overflow-style: none;
 }
 
+#root .temp_section{
+    /*border: 1px solid red;*/
+    height: 90%;
+}
+#root .temp_section .text{
+    position:relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+
+    color: rgba(255,255,255,1);
+    font-size: 20vw;
+    letter-spacing: 5px;
+}
+
 #root .temp_background{
     z-index: -1;
     position: fixed;
@@ -28,7 +46,7 @@
 #root #top_button{
     z-index: 100;
 
-    border: 1px solid white;
+    border: 1.5px solid white;
     border-radius: 5px;
     position: fixed;
     bottom: 0;
@@ -99,7 +117,7 @@
     font-weight: 600;
     text-align: center;
 
-    margin-right: 20px;
+    margin-right: 55px;
 }
 #nav .nav_sub{
     flex-grow: 1;
@@ -113,7 +131,15 @@
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
 
+    -webkit-transition: font-size 0.1s ease;
+    transition: font-size 0.1s ease;
+
+    width: 30px;
+
     display: none;
+}
+#nav .nav_content .text:hover{
+    font-size: 25px;
 }
 
 #section_1 #scroll{
@@ -179,25 +205,6 @@
     margin-top: 15px;
     font-size: 40px;
     font-weight: 600;
-}
-
-
-#root .temp_section{
-    border: 1px solid red;
-    height: 90%;
-}
-#root .temp_section .text{
-    position:relative;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    -webkit-transform:translate(-50%, -50%);
-    -ms-transform:translate(-50%, -50%);
-
-    color: rgba(255,255,255,1);
-    font-size: 20vw;
-    letter-spacing: 5px;
 }
 
 
@@ -386,7 +393,7 @@ a.skill_icon_link:visited {
 }
 
 #root #section_3 .main_sec_1 .content_box .content .left_sec{
-    width: 60%;
+    width: 55%;
     /*border: 1px solid red;*/
 }
 #root #section_3 .main_sec_1 .content_box .content .left_sec .top{
@@ -401,13 +408,20 @@ a.skill_icon_link:visited {
     border: 1px solid white;
     border-radius: 5px;
 
+    background-color: rgba(255,255,255,0.1);
+    -webkit-transition: background-color 0.3s ease;
+    transition: border 0.1s ease;
+
     font-size: 20px;
     font-width: 600;
 
     padding: 6px 10px 6px 10px;
 
-    margin: 20px 10px 20px 10px;
+    margin: 30px 10px 30px 10px;
 
+}
+#root #section_3 .main_sec_1 .content_box .content .left_sec .top .view_button:hover{
+    background-color: rgba(255,255,255,0.5);
 }
 
 #section_3 .main_sec_1 .content_box .content .left_sec #work_img{
@@ -415,13 +429,16 @@ a.skill_icon_link:visited {
     margin: 0 5% 0 2%;
     border: 1px solid white;
     border-radius: 5px;
+
+    box-shadow: 5px 5px 10px 5px rgba(255,255,255,0.3);
 }
 
 #root #section_3 .main_sec_1 .content_box .content .right_sec{
-    width: 40%;
+    width: 45%;
     /*border: 1px solid red;*/
 
     padding-top: 20px;
+    padding-left: 2%;
 }
 
 #root #section_3 .main_sec_1 .content_box .content .right_sec .content_title{
