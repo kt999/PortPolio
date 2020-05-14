@@ -1,3 +1,5 @@
+$.support.cors = true;
+
 window.onload = () => {
     //numplus
     sample;
