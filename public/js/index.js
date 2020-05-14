@@ -27,7 +27,7 @@ const skillIcon = (index) => {
         contentBox.innerHTML = `
                         <div>
                             <div>- Grid, Flex를 이용하여 구조적인 레이아웃 구성.</div>
-                            <div>- 미디어쿼리를 이용하여 필수적으로 반응형웹을 구현.</div>
+                            <div>- 미디어쿼리를 이용하여 필수적으로 반응형 웹을 구현.</div>
                             <div>- HTML태그들의 단계적인 구성을 고려하여 구조적이고 효율적인 코드작성.</div>
                         </div>
             `;
@@ -36,8 +36,8 @@ const skillIcon = (index) => {
         contentBox.innerHTML = `
                         <div>
                             <div>- ES6 문법 숙지.</div>
-                            <div>- 이벤트 핸들링을 통하여 보다 역동적인 페이지를 구현.</div>
-                            <div>- Ajax를 활용하여 외부 API서버와 통신하고 데이터를 HTML에 제공.</div>
+                            <div>- 이벤트 핸들링을 통하여 역동적인 페이지를 구현.</div>
+                            <div>- Ajax를 활용하여 외부 API서버와 통신하고 데이터를 클라이언트에 제공.</div>
                             <div>- JQuery, D3 library등 외부자바스크립트 모듈을 import하여 상황에 맞게 사용.</div>
                             <div>- 쿠키를 활용하여 JWT방식으로 로그인 로직을 구현.</div>
                         </div>
